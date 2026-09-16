@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { navLinks, site } from "@/lib/site";
 
 export function Header() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -22,11 +25,18 @@ export function Header() {
     };
   }, [open]);
 
+  const solid = scrolled || open || !isHome;
+  const ink = solid ? "text-ink" : "text-stone-warm";
+  const mute = solid ? "text-ink-mute" : "text-stone-deep";
+  const link = solid
+    ? "text-ink-soft hover:text-copper"
+    : "text-stone-warm/85 hover:text-stone-warm";
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled || open
-          ? "bg-stone-warm/90 backdrop-blur-md border-b border-ink/10"
+        solid
+          ? "border-b border-ink/10 bg-stone-warm/90 backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
@@ -36,27 +46,35 @@ export function Header() {
           className="group relative z-50"
           onClick={() => setOpen(false)}
         >
-          <span className="font-display text-lg font-semibold tracking-[0.14em] uppercase text-ink sm:text-xl">
+          <span
+            className={`font-display text-lg font-semibold tracking-[0.14em] uppercase sm:text-xl ${ink}`}
+          >
             Vishwa
           </span>
-          <span className="mt-0.5 block text-[0.62rem] font-semibold uppercase tracking-[0.28em] text-ink-mute">
+          <span
+            className={`mt-0.5 block text-[0.62rem] font-semibold uppercase tracking-[0.28em] ${mute}`}
+          >
             Construction
           </span>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
-          {navLinks.map((link) => (
+          {navLinks.map((item) => (
             <Link
-              key={link.href}
-              href={link.href}
-              className="text-[0.78rem] font-semibold uppercase tracking-[0.18em] text-ink-soft transition-colors hover:text-copper"
+              key={item.href}
+              href={item.href}
+              className={`text-[0.78rem] font-semibold uppercase tracking-[0.18em] transition-colors ${link}`}
             >
-              {link.label}
+              {item.label}
             </Link>
           ))}
           <Link
             href="/contact"
-            className="bg-ink px-5 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-stone-warm transition-colors hover:bg-copper"
+            className={`px-5 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] transition-colors ${
+              solid
+                ? "bg-ink text-stone-warm hover:bg-copper"
+                : "bg-stone-warm text-ink hover:bg-copper hover:text-stone-warm"
+            }`}
           >
             Get Quote
           </Link>
@@ -70,19 +88,19 @@ export function Header() {
           onClick={() => setOpen((v) => !v)}
         >
           <span
-            className={`h-px w-6 bg-ink transition-transform duration-300 ${
-              open ? "translate-y-[3.5px] rotate-45" : ""
-            }`}
+            className={`h-px w-6 transition-transform duration-300 ${
+              solid ? "bg-ink" : "bg-stone-warm"
+            } ${open ? "translate-y-[3.5px] rotate-45 !bg-ink" : ""}`}
           />
           <span
-            className={`h-px w-6 bg-ink transition-opacity duration-300 ${
-              open ? "opacity-0" : ""
-            }`}
+            className={`h-px w-6 transition-opacity duration-300 ${
+              solid ? "bg-ink" : "bg-stone-warm"
+            } ${open ? "opacity-0" : ""}`}
           />
           <span
-            className={`h-px w-6 bg-ink transition-transform duration-300 ${
-              open ? "-translate-y-[3.5px] -rotate-45" : ""
-            }`}
+            className={`h-px w-6 transition-transform duration-300 ${
+              solid ? "bg-ink" : "bg-stone-warm"
+            } ${open ? "-translate-y-[3.5px] -rotate-45 !bg-ink" : ""}`}
           />
         </button>
       </div>
@@ -96,10 +114,10 @@ export function Header() {
       >
         <div className="flex h-full flex-col justify-between px-5 pb-10 pt-28 sm:px-8">
           <nav className="flex flex-col gap-6">
-            {navLinks.map((link, i) => (
+            {navLinks.map((item, i) => (
               <Link
-                key={link.href}
-                href={link.href}
+                key={item.href}
+                href={item.href}
                 onClick={() => setOpen(false)}
                 className="font-display text-4xl font-semibold tracking-tight text-ink"
                 style={{
@@ -109,7 +127,7 @@ export function Header() {
                   transition: "opacity 0.4s ease, transform 0.4s ease",
                 }}
               >
-                {link.label}
+                {item.label}
               </Link>
             ))}
           </nav>

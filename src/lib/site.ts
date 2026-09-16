@@ -26,8 +26,7 @@ export const services = [
       "End-to-end residential builds — from foundation to finishing — tailored to how families actually live.",
     detail:
       "Site planning, structural design coordination, quality material sourcing, and disciplined execution for independent homes and bungalows.",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/service-home.jpg",
   },
   {
     id: "commercial",
@@ -36,8 +35,7 @@ export const services = [
       "Offices, retail, and mixed-use structures engineered for durability, compliance, and long-term value.",
     detail:
       "We manage timelines, safety, and stakeholder coordination so commercial spaces open on schedule and perform for decades.",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/service-commercial.jpg",
   },
   {
     id: "redevelopment",
@@ -46,8 +44,7 @@ export const services = [
       "Transform aging plots and structures into modern, code-ready assets without losing site intelligence.",
     detail:
       "Careful demolition planning, structural reassessment, and phased delivery that respects neighbours and city regulations.",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/service-redev.jpg",
   },
   {
     id: "renovation",
@@ -56,8 +53,7 @@ export const services = [
       "Strengthen, restyle, and extend existing buildings with craftsmanship that respects the original fabric.",
     detail:
       "From structural repairs to full interior upgrades — sequenced work that keeps disruption low and finish quality high.",
-    image:
-      "https://images.unsplash.com/photo-1505798577917-a1562402fa35?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/service-reno.jpg",
   },
   {
     id: "factory",
@@ -66,8 +62,7 @@ export const services = [
       "Industrial sheds and factory structures built for clear spans, heavy loads, and operational efficiency.",
     detail:
       "PEB coordination, civil foundations, and site logistics aligned to production timelines and safety standards.",
-    image:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/service-factory.jpg",
   },
 ];
 
@@ -99,29 +94,25 @@ export const projects = [
     title: "Residence, Solapur",
     category: "Private House",
     region: "Maharashtra",
-    image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/project-1.jpg",
   },
   {
     title: "Commercial Block",
     category: "Commercial",
     region: "Karnataka",
-    image:
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8624?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/project-2.jpg",
   },
   {
     title: "Industrial Shed",
     category: "Factory Erection",
     region: "Maharashtra",
-    image:
-      "https://images.unsplash.com/photo-1565008447742-97f4562adffd?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/project-3.jpg",
   },
   {
     title: "Heritage Renovation",
     category: "Renovation",
     region: "Telangana",
-    image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/project-4.jpg",
   },
 ];
 

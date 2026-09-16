@@ -7,15 +7,15 @@ export function Hero() {
     <section className="relative min-h-[100svh] overflow-hidden bg-ink">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2400&q=80"
+          src="/images/hero.jpg"
           alt="Construction site with steel framework rising against the sky"
           fill
           priority
-          className="object-cover animate-ken-burns"
+          className="object-cover object-center animate-ken-burns"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/88 via-ink/55 to-ink/25" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-ink/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/45 to-ink/15" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-ink/20" />
       </div>
 
       <div className="relative z-10 flex min-h-[100svh] flex-col justify-end px-5 pb-16 pt-32 sm:px-8 sm:pb-20 md:px-12 lg:px-16 lg:pb-24">
