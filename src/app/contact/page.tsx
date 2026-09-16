@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
-import { site } from "@/lib/site";
+import { site, whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Contact ${site.name} in Solapur for house construction, commercial projects, renovation, redevelopment, and factory erection.`,
+  description: `Contact ${site.name} in Solapur for architecture, interior design, construction, valuation, and estimates.`,
 };
+
+const whatsappGreeting =
+  "Hello Vishwa Construction, I would like to discuss a project.";
 
 export default function ContactPage() {
   return (
@@ -29,13 +32,18 @@ export default function ContactPage() {
                 <p className="text-lg text-ink-soft">{site.address}</p>
               </div>
               <div>
-                <p className="eyebrow mb-2">Call</p>
+                <p className="eyebrow mb-2">WhatsApp</p>
                 <a
-                  href={`tel:${site.phone}`}
+                  href={whatsappLink(whatsappGreeting)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-lg text-ink-soft link-underline"
                 >
                   {site.phone}
                 </a>
+                <p className="mt-2 text-sm text-ink-mute">
+                  Tap to chat instantly on WhatsApp
+                </p>
               </div>
               <div>
                 <p className="eyebrow mb-2">Email</p>
@@ -46,6 +54,14 @@ export default function ContactPage() {
                   {site.email}
                 </a>
               </div>
+              <a
+                href={whatsappLink(whatsappGreeting)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-12 items-center justify-center bg-[#25D366] px-7 py-3.5 text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#1ebe57]"
+              >
+                Chat on WhatsApp
+              </a>
             </div>
           </div>
 

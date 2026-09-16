@@ -26,6 +26,12 @@ export const site = {
   },
 };
 
+export function whatsappLink(message?: string) {
+  const base = `https://wa.me/${site.whatsapp}`;
+  if (!message) return base;
+  return `${base}?text=${encodeURIComponent(message)}`;
+}
+
 export const services = [
   {
     id: "architecture",

@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { site } from "@/lib/site";
+import { site, whatsappLink } from "@/lib/site";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -15,11 +15,9 @@ export function ContactForm() {
     const service = String(data.get("service") || "");
     const message = String(data.get("message") || "");
 
-    const text = encodeURIComponent(
-      `Hello Vishwa Construction,\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\n\n${message}`
-    );
+    const text = `Hello Vishwa Construction,\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\n\n${message}`;
 
-    window.open(`https://wa.me/${site.whatsapp}?text=${text}`, "_blank");
+    window.open(whatsappLink(text), "_blank", "noopener,noreferrer");
     setSubmitted(true);
     form.reset();
   }

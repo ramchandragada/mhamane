@@ -1,5 +1,8 @@
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, whatsappLink } from "@/lib/site";
+
+const whatsappGreeting =
+  "Hello Vishwa Construction, I would like to discuss a project.";
 
 export function Footer() {
   return (
@@ -50,8 +53,13 @@ export function Footer() {
           <ul className="space-y-3 text-sm tracking-wide text-stone-deep">
             <li>{site.address}</li>
             <li>
-              <a href={`tel:${site.phone}`} className="hover:text-copper-bright">
-                {site.phone}
+              <a
+                href={whatsappLink(whatsappGreeting)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-copper-bright"
+              >
+                WhatsApp {site.phone}
               </a>
             </li>
             <li>
