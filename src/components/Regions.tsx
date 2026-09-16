@@ -19,7 +19,7 @@ export function Regions() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {site.regions.map((region, i) => (
             <Reveal key={region} delay={i * 100}>
-              <div className="border border-white/15 px-6 py-10 transition-colors hover:border-copper/60">
+              <div className="border border-white/20 px-6 py-10 transition-colors hover:border-copper/70">
                 <p className="font-display text-xs tracking-[0.24em] text-copper-bright">
                   {String(i + 1).padStart(2, "0")}
                 </p>

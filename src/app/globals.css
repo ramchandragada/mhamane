@@ -58,7 +58,7 @@ body {
 }
 
 .display {
-  @apply font-display font-semibold tracking-tight text-ink;
+  @apply font-display font-semibold tracking-tight;
 }
 
 .prose-site {
