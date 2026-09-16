@@ -32,5 +32,12 @@ Update `src/lib/site.ts` with real:
 
 - Phone, WhatsApp, and email
 - Exact office address
-- Project photos (replace Unsplash placeholders)
-- Optional MD portrait on the leadership section
+
+Images in `public/images/` are **representative placeholders**. When you share real project photos, replace:
+
+| File | Use |
+|------|-----|
+| `hero.jpg` | Homepage hero |
+| `about.jpg` | About section |
+| `service-*.jpg` | Service visuals |
+| `project-*.jpg` | Portfolio grid |

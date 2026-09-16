@@ -8,14 +8,14 @@ export function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/images/hero.jpg"
-          alt="Construction site with steel framework rising against the sky"
+          alt="Active construction site with scaffolding and rising concrete structure"
           fill
           priority
           className="object-cover object-center animate-ken-burns"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/45 to-ink/15" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-ink/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/75 via-ink/35 to-ink/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-ink/25" />
       </div>
 
       <div className="relative z-10 flex min-h-[100svh] flex-col justify-end px-5 pb-16 pt-32 sm:px-8 sm:pb-20 md:px-12 lg:px-16 lg:pb-24">

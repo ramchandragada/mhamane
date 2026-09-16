@@ -18,10 +18,10 @@ export default function ProjectsPage() {
           <h1 className="display mt-4 max-w-3xl text-4xl sm:text-5xl lg:text-6xl">
             Work across homes, commerce, and industry.
           </h1>
-          <p className="prose-site mt-6 max-w-2xl">
-            Replace these placeholders with your completed project photography —
-            the layout is ready for a living portfolio.
-          </p>
+            <p className="prose-site mt-6 max-w-2xl">
+              Representative project visuals for now. Share your completed site
+              photos and we&apos;ll replace these with the real work.
+            </p>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
             {projects.map((project) => (

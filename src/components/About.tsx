@@ -1,18 +1,29 @@
+import Image from "next/image";
 import { site } from "@/lib/site";
 import { Reveal } from "./Reveal";
 
 export function About() {
   return (
     <section id="about" className="section-pad bg-stone-warm">
-      <div className="container-site grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+      <div className="container-site grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
         <Reveal>
+          <div className="relative aspect-[5/4] overflow-hidden bg-stone-deep">
+            <Image
+              src="/images/about.jpg"
+              alt="Engineers reviewing plans on a Vishwa Construction site"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+        </Reveal>
+
+        <Reveal delay={120}>
           <p className="eyebrow">About Vishwa</p>
           <h2 className="display mt-4 text-4xl sm:text-5xl lg:text-6xl">
             Construction with engineering judgement.
           </h2>
-        </Reveal>
-        <Reveal delay={120}>
-          <div className="space-y-6 prose-site">
+          <div className="mt-6 space-y-5 prose-site">
             <p>
               Vishwa Construction is a Solapur-based construction company
               dedicated to building lasting structures — from private residences
