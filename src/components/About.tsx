@@ -36,17 +36,23 @@ export function About() {
               every project as a long-term asset for the people who will live
               and work in it.
             </p>
-            <div className="grid gap-6 border-t border-ink/15 pt-8 sm:grid-cols-2">
+            <div className="grid gap-6 border-t border-ink/15 pt-8 sm:grid-cols-3">
               <div>
                 <p className="font-display text-4xl text-copper">10+</p>
                 <p className="mt-2 text-sm uppercase tracking-[0.16em] text-ink-mute">
-                  Years of field experience
+                  Years in the field
                 </p>
               </div>
               <div>
                 <p className="font-display text-4xl text-copper">5</p>
                 <p className="mt-2 text-sm uppercase tracking-[0.16em] text-ink-mute">
                   Core disciplines
+                </p>
+              </div>
+              <div>
+                <p className="font-display text-4xl text-copper">3</p>
+                <p className="mt-2 text-sm uppercase tracking-[0.16em] text-ink-mute">
+                  States served
                 </p>
               </div>
             </div>

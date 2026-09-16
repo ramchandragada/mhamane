@@ -113,7 +113,7 @@ export const projects = [
   {
     title: "Contemporary Home Facade",
     category: "Architecture",
-    region: "Maharashtra",
+    region: "Karnataka",
     image: "/images/real/photo-02.jpg",
   },
   {
@@ -131,7 +131,7 @@ export const projects = [
   {
     title: "Healthcare Interior Build",
     category: "Construction",
-    region: "Maharashtra",
+    region: "Telangana",
     image: "/images/real/photo-03.jpg",
   },
   {
@@ -143,9 +143,72 @@ export const projects = [
 ];
 
 export const navLinks = [
-  { href: "/#services", label: "Services" },
+  { href: "/services", label: "Services" },
   { href: "/projects", label: "Projects" },
   { href: "/#about", label: "About" },
   { href: "/#leadership", label: "Leadership" },
   { href: "/contact", label: "Contact" },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "Clear drawings, honest estimates, and steady site supervision. Our home in Solapur finished the way we imagined.",
+    name: "Rajesh Patil",
+    detail: "Private residence · Solapur",
+  },
+  {
+    quote:
+      "Vishwa handled architecture and interiors together — one team, one timeline. Communication stayed simple throughout.",
+    name: "Anita Deshmukh",
+    detail: "Interior renovation · Maharashtra",
+  },
+  {
+    quote:
+      "The valuation report and estimate helped us take a confident bank decision. Professional and on time.",
+    name: "Sandeep Kulkarni",
+    detail: "Valuation & estimate · Maharashtra",
+  },
+];
+
+export const faqs = [
+  {
+    q: "Which areas do you serve?",
+    a: "We are based in Solapur and take up architecture, interiors, construction, valuation, and estimate work across Maharashtra, with select projects in Karnataka and Telangana.",
+  },
+  {
+    q: "How are estimates prepared?",
+    a: "After a site visit and brief, we prepare an itemised estimate covering materials, labour, and contingencies so you can plan budget and cash flow with clarity.",
+  },
+  {
+    q: "What is a typical project timeline?",
+    a: "Timelines depend on scope — a focused interior fit-out may take weeks, while a full home build spans months. We share a milestone plan before work begins.",
+  },
+  {
+    q: "Do you handle approvals and sanctions?",
+    a: "We coordinate drawings and documentation needed for local approvals and guide you through the process. Statutory fees remain with the client unless agreed otherwise.",
+  },
+  {
+    q: "How is payment structured?",
+    a: "Engagements usually follow staged payments tied to design, estimate, and construction milestones — confirmed in writing before we start.",
+  },
+  {
+    q: "How quickly do you respond?",
+    a: "We typically respond to WhatsApp and email enquiries within one business day during working hours.",
+  },
+];
+
+export const regionDetails = [
+  {
+    name: "Maharashtra",
+    text: "Home base in Solapur — residences, interiors, commercial builds, and valuations across the state.",
+  },
+  {
+    name: "Karnataka",
+    text: "Select architecture and construction assignments with the same site discipline and design standard.",
+  },
+  {
+    name: "Telangana",
+    text: "Support for design, estimates, and build coordination where project scope and travel align.",
+  },
 ];

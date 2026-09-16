@@ -46,6 +46,17 @@ export function Services() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal>
+          <div className="mt-12">
+            <Link
+              href="/services"
+              className="inline-flex bg-ink px-6 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-stone-warm transition-colors hover:bg-brand hover:text-ink"
+            >
+              View all services
+            </Link>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

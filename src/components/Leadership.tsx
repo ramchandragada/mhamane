@@ -29,6 +29,7 @@ export function Leadership() {
               site.md.experience,
               "Based in Solapur · Projects across MH, KA & TG",
               "Architecture · Interiors · Construction · Valuation · Estimate",
+              "Civil engineering foundation with on-site build accountability",
             ].map((item) => (
               <li
                 key={item}

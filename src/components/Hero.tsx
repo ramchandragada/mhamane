@@ -30,14 +30,14 @@ export function Hero() {
             </span>
           </div>
 
-          <p
+          <h1
             className="font-display text-[clamp(2.15rem,11vw,6.4rem)] font-semibold uppercase leading-[0.92] tracking-[0.04em] text-stone-warm opacity-0 animate-fade-up sm:tracking-[0.06em]"
             style={{ animationDelay: "120ms", animationFillMode: "forwards" }}
           >
             Vishwa
             <br />
             Associates
-          </p>
+          </h1>
 
           <p
             className="mt-5 max-w-xl text-base leading-relaxed text-stone-deep opacity-0 animate-fade-up sm:mt-6 sm:text-xl"
@@ -57,7 +57,7 @@ export function Hero() {
               Start a Project
             </Link>
             <Link
-              href="/#services"
+              href="/services"
               className="inline-flex min-h-12 items-center justify-center border border-stone-warm/40 px-6 py-3.5 text-center text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-stone-warm transition-colors hover:border-stone-warm hover:bg-stone-warm/10 sm:px-7 sm:text-[0.75rem] sm:tracking-[0.18em]"
             >
               Our Expertise

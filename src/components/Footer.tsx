@@ -33,13 +33,13 @@ export function Footer() {
           <p className="eyebrow !text-stone-deep mb-4">Navigate</p>
           <ul className="space-y-3 text-sm tracking-wide">
             <li>
-              <Link href="/#services" className="hover:text-brand-bright">
+              <Link href="/services" className="hover:text-brand-bright">
                 Services
               </Link>
             </li>
             <li>
-              <Link href="/#work" className="hover:text-brand-bright">
-                Selected Work
+              <Link href="/projects" className="hover:text-brand-bright">
+                Projects
               </Link>
             </li>
             <li>
@@ -59,6 +59,7 @@ export function Footer() {
           <p className="eyebrow !text-stone-deep mb-4">Reach Us</p>
           <ul className="space-y-3 text-sm tracking-wide text-stone-deep">
             <li>{site.address}</li>
+            <li>Mon–Sat · 10:00 am – 7:00 pm</li>
             <li>
               <a
                 href={whatsappLink(whatsappGreeting)}
@@ -67,6 +68,14 @@ export function Footer() {
                 className="hover:text-brand-bright"
               >
                 WhatsApp {site.phone}
+              </a>
+            </li>
+            <li>
+              <a
+                href={`tel:${site.phone.replace(/\s/g, "")}`}
+                className="hover:text-brand-bright"
+              >
+                Call {site.phone}
               </a>
             </li>
             <li>

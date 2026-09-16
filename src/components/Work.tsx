@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { projects } from "@/lib/site";
 import { Reveal } from "./Reveal";
 
@@ -14,18 +15,25 @@ export function Work() {
                 Projects that show how we build.
               </h2>
             </div>
-            <p className="max-w-md prose-site">
-              A glimpse of architecture and interiors shaped with structural
-              clarity and careful finishing — more of your project photos can
-              replace these anytime.
-            </p>
+            <div className="max-w-md">
+              <p className="prose-site">
+                A selection of architecture, interiors, and construction work
+                shaped with structural clarity and careful finishing.
+              </p>
+              <Link
+                href="/projects"
+                className="link-underline mt-4 inline-flex text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-ink"
+              >
+                View all projects
+              </Link>
+            </div>
           </div>
         </Reveal>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2">
-          {projects.map((project, i) => (
+          {projects.slice(0, 4).map((project, i) => (
             <Reveal key={project.title} delay={(i % 2) * 80}>
-              <article className="group relative overflow-hidden">
+              <Link href="/projects" className="group relative block overflow-hidden">
                 <div className="relative aspect-[5/4] overflow-hidden bg-ink/10">
                   <Image
                     src={project.image}
@@ -37,14 +45,14 @@ export function Work() {
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/10 to-transparent opacity-90" />
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-copper-bright">
+                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-brand-bright">
                     {project.category} · {project.region}
                   </p>
                   <h3 className="display mt-2 text-2xl text-stone-warm sm:text-3xl">
                     {project.title}
                   </h3>
                 </div>
-              </article>
+              </Link>
             </Reveal>
           ))}
         </div>

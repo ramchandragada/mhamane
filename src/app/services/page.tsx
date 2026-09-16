@@ -8,22 +8,40 @@ export const metadata: Metadata = {
   title: "Services",
   description:
     "Architecture, interior design, construction, valuation, and estimates by Vishwa Associates.",
+  alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {
   return (
     <div className="bg-stone-warm pt-28">
       <section className="section-pad !pt-10">
-        <div className="container-site">
-          <p className="eyebrow">Services</p>
-          <h1 className="display mt-4 max-w-3xl text-4xl sm:text-5xl lg:text-6xl">
-            Five disciplines. One standard of quality.
-          </h1>
-          <p className="prose-site mt-6 max-w-2xl">
-            Architecture, interior design, construction, valuation, and estimates
-            — from first sketch to final handover, Vishwa Associates brings
-            engineering clarity to every stage.
-          </p>
+        <div className="container-site grid items-end gap-10 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <p className="eyebrow">Services</p>
+            <h1 className="display mt-4 max-w-3xl text-4xl sm:text-5xl lg:text-6xl">
+              Five disciplines. One standard of quality.
+            </h1>
+            <p className="prose-site mt-6 max-w-2xl">
+              Architecture, interior design, construction, valuation, and
+              estimates — from first sketch to final handover, Vishwa Associates
+              brings engineering clarity to every stage.
+            </p>
+          </div>
+          <div className="border border-ink/10 bg-stone p-8 sm:p-10">
+            <p className="eyebrow">What to expect</p>
+            <ul className="mt-6 space-y-4 text-sm leading-relaxed text-ink-mute">
+              <li>Site visit and brief within your working area</li>
+              <li>Clear scope, drawings, and estimate before build</li>
+              <li>On-ground supervision with material transparency</li>
+              <li>Handover checklist and post-completion support</li>
+            </ul>
+            <Link
+              href="/contact"
+              className="mt-8 inline-block bg-ink px-6 py-3 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-stone-warm transition-colors hover:bg-brand hover:text-ink"
+            >
+              Start a project
+            </Link>
+          </div>
         </div>
       </section>
 

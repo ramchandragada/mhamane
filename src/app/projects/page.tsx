@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Projects",
   description:
     "Selected architecture, interior, and construction projects by Vishwa Associates.",
+  alternates: { canonical: "/projects" },
 };
 
 export default function ProjectsPage() {
@@ -19,8 +20,8 @@ export default function ProjectsPage() {
             Architecture &amp; interiors from the Vishwa Associates portfolio.
           </h1>
           <p className="prose-site mt-6 max-w-2xl">
-            Real project visuals from your library. Share more completed site
-            photos anytime and we&apos;ll expand this gallery.
+            A selection of completed and in-progress work across residential,
+            interior, and commercial projects.
           </p>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
