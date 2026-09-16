@@ -49,7 +49,9 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+        className={`fixed inset-x-0 top-0 transition-all duration-500 ${
+          open ? "z-[70]" : "z-50"
+        } ${
           open
             ? "border-b border-ink/10 bg-stone-warm"
             : solid
@@ -109,23 +111,23 @@ export function Header() {
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             aria-controls="mobile-menu"
-            className="relative z-50 flex h-11 w-11 flex-col items-center justify-center gap-1.5 lg:hidden"
+            className="relative z-[80] flex h-11 w-11 flex-col items-center justify-center gap-1.5 lg:hidden"
             onClick={() => setOpen((v) => !v)}
           >
             <span
-              className={`h-px w-6 transition-transform duration-300 ${
+              className={`h-0.5 w-6 origin-center transition-transform duration-300 ${
                 solid || open ? "bg-ink" : "bg-stone-warm"
-              } ${open ? "translate-y-[3.5px] rotate-45" : ""}`}
+              } ${open ? "translate-y-[5px] rotate-45" : ""}`}
             />
             <span
-              className={`h-px w-6 transition-opacity duration-300 ${
+              className={`h-0.5 w-6 transition-opacity duration-300 ${
                 solid || open ? "bg-ink" : "bg-stone-warm"
               } ${open ? "opacity-0" : ""}`}
             />
             <span
-              className={`h-px w-6 transition-transform duration-300 ${
+              className={`h-0.5 w-6 origin-center transition-transform duration-300 ${
                 solid || open ? "bg-ink" : "bg-stone-warm"
-              } ${open ? "-translate-y-[3.5px] -rotate-45" : ""}`}
+              } ${open ? "-translate-y-[5px] -rotate-45" : ""}`}
             />
           </button>
         </div>
