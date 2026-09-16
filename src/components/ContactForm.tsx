@@ -54,13 +54,13 @@ export function ContactForm() {
         <select
           name="service"
           className="w-full border-b border-ink/25 bg-transparent py-3 text-base outline-none transition-colors focus:border-copper"
-          defaultValue="Private House Construction"
+          defaultValue="Architecture"
         >
-          <option>Private House Construction</option>
-          <option>Commercial Building Construction</option>
-          <option>Redevelopment Projects</option>
-          <option>Renovation Projects</option>
-          <option>Factory Erection</option>
+          <option>Architecture</option>
+          <option>Interior Design</option>
+          <option>Construction</option>
+          <option>Valuation</option>
+          <option>Estimate</option>
           <option>General Enquiry</option>
         </select>
       </label>

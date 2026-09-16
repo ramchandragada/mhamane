@@ -7,8 +7,8 @@ export function Hero() {
     <section className="relative min-h-[100svh] overflow-hidden bg-ink">
       <div className="absolute inset-0">
         <Image
-          src="/images/hero.jpg"
-          alt="Active construction site with scaffolding and rising concrete structure"
+          src="/images/real/photo-06.jpg"
+          alt="Modern residential architecture by Vishwa Construction"
           fill
           priority
           className="object-cover object-center animate-ken-burns"

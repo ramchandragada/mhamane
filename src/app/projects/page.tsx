@@ -16,12 +16,12 @@ export default function ProjectsPage() {
         <div className="container-site">
           <p className="eyebrow">Projects</p>
           <h1 className="display mt-4 max-w-3xl text-4xl sm:text-5xl lg:text-6xl">
-            Work across homes, commerce, and industry.
+            Architecture &amp; interiors from the Vishwa portfolio.
           </h1>
-            <p className="prose-site mt-6 max-w-2xl">
-              Representative project visuals for now. Share your completed site
-              photos and we&apos;ll replace these with the real work.
-            </p>
+          <p className="prose-site mt-6 max-w-2xl">
+            Real project visuals from your library. Share more completed site
+            photos anytime and we&apos;ll expand this gallery.
+          </p>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
             {projects.map((project) => (

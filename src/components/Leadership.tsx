@@ -15,9 +15,10 @@ export function Leadership() {
             {site.md.title}
           </p>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-stone-deep">
-            Er. Vishal Mhamane leads Vishwa Construction with a civil
-            engineer&apos;s eye for structure and a builder&apos;s respect for
-            craft — balancing technical integrity with practical site realities.
+              Er. Vishal Mhamane leads Vishwa Construction with an architect and
+              civil engineer&apos;s eye for structure — and a builder&apos;s
+              respect for craft. His approach balances design integrity with
+              practical site realities.
           </p>
         </Reveal>
 
@@ -27,7 +28,7 @@ export function Leadership() {
               site.md.education,
               site.md.experience,
               "Based in Solapur · Projects across MH, KA & TG",
-              "Specialised in residential, commercial & industrial builds",
+              "Architecture · Interiors · Construction · Valuation · Estimate",
             ].map((item) => (
               <li
                 key={item}

@@ -15,8 +15,9 @@ export function Work() {
               </h2>
             </div>
             <p className="max-w-md prose-site">
-              A glimpse of residential, commercial, industrial, and renovation
-              work shaped with structural clarity and careful finishing.
+              A glimpse of architecture and interiors shaped with structural
+              clarity and careful finishing — more of your project photos can
+              replace these anytime.
             </p>
           </div>
         </Reveal>

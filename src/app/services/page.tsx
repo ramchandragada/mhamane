@@ -17,12 +17,12 @@ export default function ServicesPage() {
         <div className="container-site">
           <p className="eyebrow">Services</p>
           <h1 className="display mt-4 max-w-3xl text-4xl sm:text-5xl lg:text-6xl">
-            Five specialisations. One standard of build quality.
+            Five disciplines. One standard of quality.
           </h1>
           <p className="prose-site mt-6 max-w-2xl">
-            Whether you are raising a family home, expanding a commercial
-            footprint, renewing an older structure, or erecting a factory —
-            Vishwa brings engineering clarity to the site.
+            Architecture, interior design, construction, valuation, and estimates
+            — from first sketch to final handover, Vishwa brings engineering
+            clarity to every stage.
           </p>
         </div>
       </section>

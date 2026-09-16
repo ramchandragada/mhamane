@@ -9,8 +9,8 @@ export function About() {
         <Reveal>
           <div className="relative aspect-[5/4] overflow-hidden bg-stone-deep">
             <Image
-              src="/images/about.jpg"
-              alt="Engineers reviewing plans on a Vishwa Construction site"
+              src="/images/real/photo-04.jpg"
+              alt="Architectural design by Vishwa Construction"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -25,16 +25,16 @@ export function About() {
           </h2>
           <div className="mt-6 space-y-5 prose-site">
             <p>
-              Vishwa Construction is a Solapur-based construction company
-              dedicated to building lasting structures — from private residences
-              to commercial buildings, redevelopment, renovations, and factory
-              erection.
+              Vishwa Construction is a Solapur-based practice spanning
+              architecture, interior design, construction, valuation, and
+              estimates — delivering private residences, commercial spaces,
+              redevelopment, renovations, and industrial builds.
             </p>
             <p>
-              Led by civil engineer Er. Vishal Mhamane, our work is grounded in
-              technical clarity, site discipline, and honest communication. We
-              treat every project as a long-term asset for the people who will
-              live and work in it.
+              Led by Er. Vishal Mhamane, our work is grounded in technical
+              clarity, design judgement, and honest communication. We treat
+              every project as a long-term asset for the people who will live
+              and work in it.
             </p>
             <div className="grid gap-6 border-t border-ink/15 pt-8 sm:grid-cols-2">
               <div>
@@ -44,12 +44,17 @@ export function About() {
                 </p>
               </div>
               <div>
-                <p className="font-display text-4xl text-copper">3</p>
+                <p className="font-display text-4xl text-copper">5</p>
                 <p className="mt-2 text-sm uppercase tracking-[0.16em] text-ink-mute">
-                  States of active delivery
+                  Core disciplines
                 </p>
               </div>
             </div>
+            <ul className="flex flex-wrap gap-x-4 gap-y-2 pt-2 text-sm font-semibold uppercase tracking-[0.14em] text-ink-mute">
+              {site.disciplines.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
             <p className="text-sm uppercase tracking-[0.16em] text-ink-mute">
               Headquartered in {site.location}
             </p>

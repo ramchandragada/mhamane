@@ -10,7 +10,7 @@ export function Services() {
         <Reveal>
           <p className="eyebrow">What we build</p>
           <h2 className="display mt-4 max-w-3xl text-4xl sm:text-5xl lg:text-6xl">
-            Specialised construction across homes, commerce, and industry.
+            Architecture, interiors, construction, valuation &amp; estimates.
           </h2>
         </Reveal>
 

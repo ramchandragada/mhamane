@@ -1,18 +1,26 @@
 export const site = {
   name: "Vishwa Construction",
   shortName: "Vishwa",
-  tagline: "Structures built with precision, rooted in Solapur.",
+  tagline:
+    "Architecture, interiors, construction, valuation & estimates — rooted in Solapur.",
   description:
-    "Vishwa Construction delivers private homes, commercial buildings, redevelopment, renovation, and factory erection across Maharashtra, Karnataka, and Telangana.",
+    "Vishwa Construction delivers architecture, interior design, construction, property valuation, and estimates across Maharashtra, Karnataka, and Telangana. Led by Er. Vishal Mhamane from Solapur.",
   location: "Solapur, Maharashtra",
   regions: ["Maharashtra", "Karnataka", "Telangana"],
-  phone: "+91 98765 43210",
-  email: "hello@vishwaconstruction.in",
-  whatsapp: "919876543210",
+  phone: "+91 77093 86771",
+  email: "ar.vishal08@gmail.com",
+  whatsapp: "917709386771",
   address: "Solapur, Maharashtra, India",
+  disciplines: [
+    "Architecture",
+    "Interior Design",
+    "Construction",
+    "Valuation",
+    "Estimate",
+  ],
   md: {
     name: "Er. Vishal Mhamane",
-    title: "Managing Director",
+    title: "Architect & Managing Director",
     education: "B.E. Civil — Government College of Engineering, Karad",
     experience: "10+ years in the construction field",
   },
@@ -20,49 +28,49 @@ export const site = {
 
 export const services = [
   {
-    id: "private-homes",
-    title: "Private House Construction",
+    id: "architecture",
+    title: "Architecture",
     summary:
-      "End-to-end residential builds — from foundation to finishing — tailored to how families actually live.",
+      "Concept-to-drawing architectural design for residences and commercial spaces — elevations, layouts, and buildable detailing.",
     detail:
-      "Site planning, structural design coordination, quality material sourcing, and disciplined execution for independent homes and bungalows.",
-    image: "/images/service-home.jpg",
+      "From site study and planning to 3D visualisation and working drawings, we shape structures that balance aesthetics, function, and local regulations.",
+    image: "/images/real/photo-05.jpg",
   },
   {
-    id: "commercial",
-    title: "Commercial Building Construction",
+    id: "interior-design",
+    title: "Interior Design",
     summary:
-      "Offices, retail, and mixed-use structures engineered for durability, compliance, and long-term value.",
+      "Thoughtful interiors for homes and workplaces — kitchens, bedrooms, living spaces, and custom furniture planning.",
     detail:
-      "We manage timelines, safety, and stakeholder coordination so commercial spaces open on schedule and perform for decades.",
-    image: "/images/service-commercial.jpg",
+      "Material selection, modular layouts, lighting, and finishing coordination so every room feels intentional and practical for daily life.",
+    image: "/images/real/photo-07.jpg",
   },
   {
-    id: "redevelopment",
-    title: "Redevelopment Projects",
+    id: "construction",
+    title: "Construction",
     summary:
-      "Transform aging plots and structures into modern, code-ready assets without losing site intelligence.",
+      "On-ground execution for private homes, commercial buildings, redevelopment, renovation, and factory erection.",
     detail:
-      "Careful demolition planning, structural reassessment, and phased delivery that respects neighbours and city regulations.",
-    image: "/images/service-redev.jpg",
+      "Disciplined site supervision, quality checks, and clear timelines across Maharashtra, Karnataka, and Telangana.",
+    image: "/images/real/photo-03.jpg",
   },
   {
-    id: "renovation",
-    title: "Renovation Projects",
+    id: "valuation",
+    title: "Valuation",
     summary:
-      "Strengthen, restyle, and extend existing buildings with craftsmanship that respects the original fabric.",
+      "Professional property valuation support for banks, legal documentation, and informed investment decisions.",
     detail:
-      "From structural repairs to full interior upgrades — sequenced work that keeps disruption low and finish quality high.",
-    image: "/images/service-reno.jpg",
+      "Site assessment and documentation aligned to market realities — useful for loans, registration, and project planning.",
+    image: "/images/real/photo-04.jpg",
   },
   {
-    id: "factory",
-    title: "Factory Erection",
+    id: "estimate",
+    title: "Estimate",
     summary:
-      "Industrial sheds and factory structures built for clear spans, heavy loads, and operational efficiency.",
+      "Transparent cost estimates and quantity planning before you break ground — so budgets stay realistic.",
     detail:
-      "PEB coordination, civil foundations, and site logistics aligned to production timelines and safety standards.",
-    image: "/images/service-factory.jpg",
+      "Itemised estimates covering materials, labour, and contingencies, helping you compare options and plan cash flow with clarity.",
+    image: "/images/real/photo-02.jpg",
   },
 ];
 
@@ -74,8 +82,8 @@ export const processSteps = [
   },
   {
     step: "02",
-    title: "Plan & Engineer",
-    text: "Align architecture, structure, and budget into a buildable plan with transparent milestones.",
+    title: "Design & Estimate",
+    text: "Align architecture, interiors, and budget into a clear plan with transparent milestones.",
   },
   {
     step: "03",
@@ -91,28 +99,40 @@ export const processSteps = [
 
 export const projects = [
   {
-    title: "Residence, Solapur",
-    category: "Private House",
+    title: "Corner Residence Design",
+    category: "Architecture",
     region: "Maharashtra",
-    image: "/images/project-1.jpg",
+    image: "/images/real/photo-06.jpg",
   },
   {
-    title: "Commercial Block",
-    category: "Commercial",
-    region: "Karnataka",
-    image: "/images/project-2.jpg",
-  },
-  {
-    title: "Industrial Shed",
-    category: "Factory Erection",
+    title: "Contemporary Home Facade",
+    category: "Architecture",
     region: "Maharashtra",
-    image: "/images/project-3.jpg",
+    image: "/images/real/photo-02.jpg",
   },
   {
-    title: "Heritage Renovation",
-    category: "Renovation",
-    region: "Telangana",
-    image: "/images/project-4.jpg",
+    title: "Modular Kitchen Interior",
+    category: "Interior Design",
+    region: "Maharashtra",
+    image: "/images/real/photo-07.jpg",
+  },
+  {
+    title: "Bedroom Fit-Out",
+    category: "Interior Design",
+    region: "Maharashtra",
+    image: "/images/real/photo-08.jpg",
+  },
+  {
+    title: "Healthcare Interior Build",
+    category: "Construction",
+    region: "Maharashtra",
+    image: "/images/real/photo-03.jpg",
+  },
+  {
+    title: "Courtyard & Outdoor Works",
+    category: "Construction",
+    region: "Maharashtra",
+    image: "/images/real/photo-01.jpg",
   },
 ];
 

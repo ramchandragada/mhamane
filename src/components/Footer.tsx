@@ -14,7 +14,8 @@ export function Footer() {
           </p>
           <p className="mt-6 max-w-md text-stone-deep">
             Building private homes, commercial spaces, and industrial structures
-            across Maharashtra, Karnataka, and Telangana — from Solapur.
+            across Maharashtra, Karnataka, and Telangana — with architecture,
+            interiors, valuation, and estimates under one practice.
           </p>
         </div>
 
