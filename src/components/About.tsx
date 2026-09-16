@@ -11,7 +11,7 @@ export function About() {
             <Image
               src="/images/real/photo-04.jpg"
               alt="Architectural design by Vishwa Associates"
-            fill
+              fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -21,20 +21,20 @@ export function About() {
         <Reveal delay={120}>
           <p className="eyebrow">About Vishwa Associates</p>
           <h2 className="display mt-4 text-4xl sm:text-5xl lg:text-6xl">
-            Design and construction with engineering judgement.
+            End-to-end construction under one roof.
           </h2>
           <div className="mt-6 space-y-5 prose-site">
             <p>
               Vishwa Associates is a Solapur-based practice spanning
               architecture, interior design, construction, valuation, and
-              estimates — delivering private residences, commercial spaces,
-              redevelopment, renovations, and industrial builds.
+              estimates — a true one-stop partner for residences, commercial
+              spaces, redevelopment, renovations, and industrial builds.
             </p>
             <p>
-              Led by Er. Vishal Mhamane, our work is grounded in technical
-              clarity, design judgement, and honest communication. We treat
-              every project as a long-term asset for the people who will live
-              and work in it.
+              Clients come to us so they do not have to run from pillar to post
+              for design, sanctions, materials, technical decisions, or site
+              labour. Led by Er. Vishal Mhamane, we take single-point ownership
+              from first sketch to final handover — for total peace of mind.
             </p>
             <div className="grid gap-6 border-t border-ink/15 pt-8 sm:grid-cols-3">
               <div>
@@ -50,9 +50,9 @@ export function About() {
                 </p>
               </div>
               <div>
-                <p className="font-display text-4xl text-copper">3</p>
+                <p className="font-display text-4xl text-copper">1</p>
                 <p className="mt-2 text-sm uppercase tracking-[0.16em] text-ink-mute">
-                  States served
+                  Accountable team
                 </p>
               </div>
             </div>

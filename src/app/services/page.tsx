@@ -19,21 +19,22 @@ export default function ServicesPage() {
           <div>
             <p className="eyebrow">Services</p>
             <h1 className="display mt-4 max-w-3xl text-4xl sm:text-5xl lg:text-6xl">
-              Five disciplines. One standard of quality.
+              Five disciplines. One accountable team.
             </h1>
             <p className="prose-site mt-6 max-w-2xl">
-              Architecture, interior design, construction, valuation, and
-              estimates — from first sketch to final handover, Vishwa Associates
-              brings engineering clarity to every stage.
+              Architecture, interiors, construction, valuation, and estimates —
+              plus approvals support, procurement, and site management. One
+              partner from first sketch to handover, so you never chase the
+              project yourself.
             </p>
           </div>
           <div className="border border-ink/10 bg-stone p-8 sm:p-10">
             <p className="eyebrow">What to expect</p>
             <ul className="mt-6 space-y-4 text-sm leading-relaxed text-ink-mute">
-              <li>Site visit and brief within your working area</li>
-              <li>Clear scope, drawings, and estimate before build</li>
-              <li>On-ground supervision with material transparency</li>
-              <li>Handover checklist and post-completion support</li>
+              <li>Design and estimates under one roof</li>
+              <li>Support for government approvals &amp; sanctions</li>
+              <li>Material procurement with transparent costing</li>
+              <li>Contractor and labour management on site</li>
             </ul>
             <Link
               href="/contact"

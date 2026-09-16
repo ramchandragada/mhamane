@@ -8,7 +8,7 @@ export function Process() {
         <Reveal>
           <p className="eyebrow">How we work</p>
           <h2 className="display mt-4 max-w-2xl text-4xl sm:text-5xl">
-            A clear path from brief to handover.
+            From brief to keys — without the chase.
           </h2>
         </Reveal>
 

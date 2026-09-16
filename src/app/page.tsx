@@ -3,6 +3,7 @@ import { CtaBand } from "@/components/CtaBand";
 import { Faq } from "@/components/Faq";
 import { Hero } from "@/components/Hero";
 import { Leadership } from "@/components/Leadership";
+import { OneStop } from "@/components/OneStop";
 import { Process } from "@/components/Process";
 import { Regions } from "@/components/Regions";
 import { Services } from "@/components/Services";
@@ -14,6 +15,7 @@ export default function HomePage() {
     <>
       <Hero />
       <About />
+      <OneStop />
       <Services />
       <Regions />
       <Work />

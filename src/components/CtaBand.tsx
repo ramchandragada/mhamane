@@ -12,11 +12,11 @@ export function CtaBand() {
                 Ready when you are
               </p>
               <h2 className="display mt-4 text-4xl text-ink sm:text-5xl lg:text-6xl">
-                Let&apos;s discuss your next build.
+                Build with total peace of mind.
               </h2>
               <p className="mt-5 max-w-lg text-lg text-ink/80">
-                Share your plot, timeline, and vision — we&apos;ll respond with
-                clear next steps.
+                One partner for design, approvals, materials, and site
+                execution — so you never have to chase the project yourself.
               </p>
             </div>
             <Link
