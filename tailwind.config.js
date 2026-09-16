@@ -19,9 +19,14 @@ module.exports = {
           deep: "#cfc5b6",
         },
         copper: {
-          DEFAULT: "#b86a3a",
-          bright: "#d4844f",
-          deep: "#8f4f28",
+          DEFAULT: "#1eb8c9",
+          bright: "#3fd0df",
+          deep: "#1594a3",
+        },
+        brand: {
+          DEFAULT: "#1eb8c9",
+          bright: "#3fd0df",
+          deep: "#1594a3",
         },
         steel: {
           DEFAULT: "#3d4a55",

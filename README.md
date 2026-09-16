@@ -1,6 +1,6 @@
-# Vishwa Construction
+# Vishwa Associates
 
-Corporate website for **Vishwa Construction** — Solapur-based builders serving Maharashtra, Karnataka, and Telangana.
+Corporate website for **Vishwa Associates** — Solapur-based architecture, interiors, construction, valuation, and estimates.
 
 ## Stack
 
@@ -18,26 +18,12 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Deploy (Vercel)
+## Live
 
-```bash
-npx vercel
-```
-
-Or connect the GitHub repo `ramchandragada/mhamane` in the Vercel dashboard.
+https://mhamane.vercel.app
 
 ## Content to personalise
 
-Update `src/lib/site.ts` with real:
+Update `src/lib/site.ts` with real office address if needed.
 
-- Phone, WhatsApp, and email
-- Exact office address
-
-Images in `public/images/` are **representative placeholders**. When you share real project photos, replace:
-
-| File | Use |
-|------|-----|
-| `hero.jpg` | Homepage hero |
-| `about.jpg` | About section |
-| `service-*.jpg` | Service visuals |
-| `project-*.jpg` | Portfolio grid |
+Images in `public/images/real/` are client project photos. Brand mark is the VA monogram in `BrandLogo`.

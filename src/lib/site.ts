@@ -1,10 +1,10 @@
 export const site = {
-  name: "Vishwa Construction",
+  name: "Vishwa Associates",
   shortName: "Vishwa",
   tagline:
     "Architecture, interiors, construction, valuation & estimates — rooted in Solapur.",
   description:
-    "Vishwa Construction delivers architecture, interior design, construction, property valuation, and estimates across Maharashtra, Karnataka, and Telangana. Led by Er. Vishal Mhamane from Solapur.",
+    "Vishwa Associates delivers architecture, interior design, construction, property valuation, and estimates across Maharashtra, Karnataka, and Telangana. Led by Er. Vishal Mhamane from Solapur.",
   location: "Solapur, Maharashtra",
   regions: ["Maharashtra", "Karnataka", "Telangana"],
   phone: "+91 77093 86771",

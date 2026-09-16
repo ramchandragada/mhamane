@@ -15,7 +15,7 @@ export function ContactForm() {
     const service = String(data.get("service") || "");
     const message = String(data.get("message") || "");
 
-    const text = `Hello Vishwa Construction,\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\n\n${message}`;
+    const text = `Hello Vishwa Associates,\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\n\n${message}`;
 
     window.open(whatsappLink(text), "_blank", "noopener,noreferrer");
     setSubmitted(true);

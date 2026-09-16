@@ -27,16 +27,16 @@ const body = Figtree({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.name} | Solapur Construction Company`,
+    default: `${site.name} | Architecture & Construction · Solapur`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
   keywords: [
-    "Vishwa Construction",
-    "Solapur builders",
+    "Vishwa Associates",
+    "Solapur architects",
+    "interior design Solapur",
     "house construction Maharashtra",
-    "commercial construction",
-    "factory erection",
+    "property valuation",
     "Vishal Mhamane",
   ],
   openGraph: {

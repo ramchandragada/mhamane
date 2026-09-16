@@ -10,8 +10,8 @@ export function About() {
           <div className="relative aspect-[5/4] overflow-hidden bg-stone-deep">
             <Image
               src="/images/real/photo-04.jpg"
-              alt="Architectural design by Vishwa Construction"
-              fill
+              alt="Architectural design by Vishwa Associates"
+            fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -19,13 +19,13 @@ export function About() {
         </Reveal>
 
         <Reveal delay={120}>
-          <p className="eyebrow">About Vishwa</p>
+          <p className="eyebrow">About Vishwa Associates</p>
           <h2 className="display mt-4 text-4xl sm:text-5xl lg:text-6xl">
-            Construction with engineering judgement.
+            Design and construction with engineering judgement.
           </h2>
           <div className="mt-6 space-y-5 prose-site">
             <p>
-              Vishwa Construction is a Solapur-based practice spanning
+              Vishwa Associates is a Solapur-based practice spanning
               architecture, interior design, construction, valuation, and
               estimates — delivering private residences, commercial spaces,
               redevelopment, renovations, and industrial builds.

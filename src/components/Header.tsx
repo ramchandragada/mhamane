@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { BrandLogo } from "@/components/BrandLogo";
 import { navLinks, site } from "@/lib/site";
 
 export function Header() {
@@ -29,8 +30,9 @@ export function Header() {
   const ink = solid ? "text-ink" : "text-stone-warm";
   const mute = solid ? "text-ink-mute" : "text-stone-deep";
   const link = solid
-    ? "text-ink-soft hover:text-copper"
+    ? "text-ink-soft hover:text-brand"
     : "text-stone-warm/85 hover:text-stone-warm";
+  const logoColor = solid ? "text-brand" : "text-brand-bright";
 
   return (
     <header
@@ -40,21 +42,28 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="container-site flex items-center justify-between px-5 py-4 sm:px-8 md:px-12 lg:px-16">
+      <div className="container-site flex items-center justify-between px-5 py-3.5 sm:px-8 md:px-12 lg:px-16">
         <Link
           href="/"
-          className="group relative z-50"
+          className="group relative z-50 flex items-center gap-3"
           onClick={() => setOpen(false)}
         >
           <span
-            className={`font-display text-lg font-semibold tracking-[0.14em] uppercase sm:text-xl ${ink}`}
+            className={`flex h-11 w-11 shrink-0 items-center justify-center sm:h-12 sm:w-12 ${logoColor}`}
           >
-            Vishwa
+            <BrandLogo className="h-full w-full" />
           </span>
-          <span
-            className={`mt-0.5 block text-[0.62rem] font-semibold uppercase tracking-[0.28em] ${mute}`}
-          >
-            Construction
+          <span className="leading-none">
+            <span
+              className={`font-display text-lg font-semibold tracking-[0.12em] uppercase sm:text-xl ${ink}`}
+            >
+              Vishwa
+            </span>
+            <span
+              className={`mt-0.5 block text-[0.62rem] font-semibold uppercase tracking-[0.26em] ${mute}`}
+            >
+              Associates
+            </span>
           </span>
         </Link>
 
@@ -72,8 +81,8 @@ export function Header() {
             href="/contact"
             className={`px-5 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] transition-colors ${
               solid
-                ? "bg-ink text-stone-warm hover:bg-copper"
-                : "bg-stone-warm text-ink hover:bg-copper hover:text-stone-warm"
+                ? "bg-ink text-stone-warm hover:bg-brand"
+                : "bg-stone-warm text-ink hover:bg-brand hover:text-ink"
             }`}
           >
             Get Quote

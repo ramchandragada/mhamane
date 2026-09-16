@@ -1,7 +1,7 @@
 import { site, whatsappLink } from "@/lib/site";
 
 const defaultMessage =
-  "Hello Vishwa Construction, I would like to discuss a project.";
+  "Hello Vishwa Associates, I would like to discuss a project.";
 
 export function WhatsAppFloat() {
   return (

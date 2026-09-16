@@ -7,7 +7,7 @@ import { services } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Private house construction, commercial buildings, redevelopment, renovation, and factory erection by Vishwa Construction.",
+    "Architecture, interior design, construction, valuation, and estimates by Vishwa Associates.",
 };
 
 export default function ServicesPage() {
@@ -21,8 +21,8 @@ export default function ServicesPage() {
           </h1>
           <p className="prose-site mt-6 max-w-2xl">
             Architecture, interior design, construction, valuation, and estimates
-            — from first sketch to final handover, Vishwa brings engineering
-            clarity to every stage.
+            — from first sketch to final handover, Vishwa Associates brings
+            engineering clarity to every stage.
           </p>
         </div>
       </section>

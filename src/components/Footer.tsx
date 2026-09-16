@@ -1,24 +1,31 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/BrandLogo";
 import { site, whatsappLink } from "@/lib/site";
 
 const whatsappGreeting =
-  "Hello Vishwa Construction, I would like to discuss a project.";
+  "Hello Vishwa Associates, I would like to discuss a project.";
 
 export function Footer() {
   return (
     <footer className="border-t border-ink/10 bg-ink text-stone-warm">
       <div className="container-site section-pad grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="font-display text-3xl font-semibold tracking-[0.12em] uppercase sm:text-4xl">
-            Vishwa
-          </p>
-          <p className="mt-1 text-sm uppercase tracking-[0.28em] text-stone-deep">
-            Construction
-          </p>
+          <div className="flex items-center gap-4">
+            <span className="flex h-14 w-14 text-brand-bright">
+              <BrandLogo className="h-full w-full" />
+            </span>
+            <div>
+              <p className="font-display text-3xl font-semibold tracking-[0.12em] uppercase sm:text-4xl">
+                Vishwa
+              </p>
+              <p className="mt-1 text-sm uppercase tracking-[0.28em] text-stone-deep">
+                Associates
+              </p>
+            </div>
+          </div>
           <p className="mt-6 max-w-md text-stone-deep">
-            Building private homes, commercial spaces, and industrial structures
-            across Maharashtra, Karnataka, and Telangana — with architecture,
-            interiors, valuation, and estimates under one practice.
+            Architecture, interiors, construction, valuation, and estimates
+            across Maharashtra, Karnataka, and Telangana — from Solapur.
           </p>
         </div>
 
@@ -26,22 +33,22 @@ export function Footer() {
           <p className="eyebrow !text-stone-deep mb-4">Navigate</p>
           <ul className="space-y-3 text-sm tracking-wide">
             <li>
-              <Link href="/#services" className="hover:text-copper-bright">
+              <Link href="/#services" className="hover:text-brand-bright">
                 Services
               </Link>
             </li>
             <li>
-              <Link href="/#work" className="hover:text-copper-bright">
+              <Link href="/#work" className="hover:text-brand-bright">
                 Selected Work
               </Link>
             </li>
             <li>
-              <Link href="/#leadership" className="hover:text-copper-bright">
+              <Link href="/#leadership" className="hover:text-brand-bright">
                 Leadership
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-copper-bright">
+              <Link href="/contact" className="hover:text-brand-bright">
                 Contact
               </Link>
             </li>
@@ -57,7 +64,7 @@ export function Footer() {
                 href={whatsappLink(whatsappGreeting)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-copper-bright"
+                className="hover:text-brand-bright"
               >
                 WhatsApp {site.phone}
               </a>
@@ -65,7 +72,7 @@ export function Footer() {
             <li>
               <a
                 href={`mailto:${site.email}`}
-                className="hover:text-copper-bright"
+                className="hover:text-brand-bright"
               >
                 {site.email}
               </a>

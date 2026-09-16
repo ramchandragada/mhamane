@@ -15,7 +15,7 @@ export function Leadership() {
             {site.md.title}
           </p>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-stone-deep">
-              Er. Vishal Mhamane leads Vishwa Construction with an architect and
+              Er. Vishal Mhamane leads Vishwa Associates with an architect and
               civil engineer&apos;s eye for structure — and a builder&apos;s
               respect for craft. His approach balances design integrity with
               practical site realities.

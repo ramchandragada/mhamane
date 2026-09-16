@@ -6,7 +6,7 @@ import { projects } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Selected residential, commercial, renovation, and industrial projects by Vishwa Construction.",
+    "Selected architecture, interior, and construction projects by Vishwa Associates.",
 };
 
 export default function ProjectsPage() {
@@ -16,7 +16,7 @@ export default function ProjectsPage() {
         <div className="container-site">
           <p className="eyebrow">Projects</p>
           <h1 className="display mt-4 max-w-3xl text-4xl sm:text-5xl lg:text-6xl">
-            Architecture &amp; interiors from the Vishwa portfolio.
+            Architecture &amp; interiors from the Vishwa Associates portfolio.
           </h1>
           <p className="prose-site mt-6 max-w-2xl">
             Real project visuals from your library. Share more completed site

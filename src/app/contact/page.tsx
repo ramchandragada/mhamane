@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const whatsappGreeting =
-  "Hello Vishwa Construction, I would like to discuss a project.";
+  "Hello Vishwa Associates, I would like to discuss a project.";
 
 export default function ContactPage() {
   return (
