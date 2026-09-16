@@ -16,7 +16,7 @@ export function Regions() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {site.regions.map((region, i) => (
             <Reveal key={region} delay={i * 100}>
               <div className="border border-white/15 px-6 py-10 transition-colors hover:border-copper/60">

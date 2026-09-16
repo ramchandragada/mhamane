@@ -31,7 +31,7 @@ export function Services() {
                   <p className="font-display text-sm tracking-[0.2em] text-copper">
                     {String(index + 1).padStart(2, "0")}
                   </p>
-                  <h3 className="display mt-3 text-3xl sm:text-4xl">
+                  <h3 className="display mt-3 text-[1.75rem] leading-tight sm:text-4xl">
                     {service.title}
                   </h3>
                   <p className="prose-site mt-4 max-w-xl">{service.summary}</p>

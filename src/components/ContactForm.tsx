@@ -33,7 +33,7 @@ export function ContactForm() {
             required
             name="name"
             type="text"
-            className="w-full border-b border-ink/25 bg-transparent py-3 outline-none transition-colors focus:border-copper"
+            className="w-full border-b border-ink/25 bg-transparent py-3 text-base outline-none transition-colors focus:border-copper"
             placeholder="Your full name"
           />
         </label>
@@ -43,7 +43,7 @@ export function ContactForm() {
             required
             name="phone"
             type="tel"
-            className="w-full border-b border-ink/25 bg-transparent py-3 outline-none transition-colors focus:border-copper"
+            className="w-full border-b border-ink/25 bg-transparent py-3 text-base outline-none transition-colors focus:border-copper"
             placeholder="+91"
           />
         </label>
@@ -53,7 +53,7 @@ export function ContactForm() {
         <span className="eyebrow mb-2 block">Service interest</span>
         <select
           name="service"
-          className="w-full border-b border-ink/25 bg-transparent py-3 outline-none transition-colors focus:border-copper"
+          className="w-full border-b border-ink/25 bg-transparent py-3 text-base outline-none transition-colors focus:border-copper"
           defaultValue="Private House Construction"
         >
           <option>Private House Construction</option>
@@ -71,7 +71,7 @@ export function ContactForm() {
           required
           name="message"
           rows={5}
-          className="w-full resize-y border-b border-ink/25 bg-transparent py-3 outline-none transition-colors focus:border-copper"
+          className="w-full resize-y border-b border-ink/25 bg-transparent py-3 text-base outline-none transition-colors focus:border-copper"
           placeholder="Location, plot size, timeline, and what you want to build…"
         />
       </label>
